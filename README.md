@@ -41,4 +41,18 @@ Installation:
 
 * sudo python install.py
 
+* sudo apt-get install fail2ban
+* 
+Refining your SSHd Configuration on raspberry:
+To enforce strict SSH logins even further, I have done the following to my SSH configuration:
+    Set time to enter password to 20 seconds before becoming invalid.
+    Disabled root login.
+    Set maximum retries to 3 per connection.
+To set this, open your /etc/ssh/sshd_config and change the following (and uncomment if necessary).
+
+LoginGraceTime 20s
+PermitRootLogin no
+MaxAuthTries 3
+
 See EBBS-Guide for bbs administration.
+
