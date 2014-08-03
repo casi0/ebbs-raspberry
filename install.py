@@ -80,6 +80,10 @@ print("* chown -R bbs /home/\n")
 os.system("chown -R bbs /home/")
 print("* chgrp -R bbs /home/bbs\n")
 os.system("chgrp -R bbs /home/bbs")
+print("* Delete ssh printable headers")
+os.system("touch /home/bbs/.hushlogin")
+os.system("rm /etc/motd")
+os.system("touch /etc/motd")
 
 
 print ("* Installation finish\n")
