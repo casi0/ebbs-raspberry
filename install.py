@@ -18,6 +18,9 @@ os.system("apt-get update && apt-get upgrade")
 print("* Install libncurses5-dev\n")
 os.system("apt-get install libncurses5-dev")
 
+print("* Install fail2ban\n")
+os.system("apt-get install fail2ban")
+
 bbs_account = "bbs:x:1001:1004:Bulletin Board System,,,:/home/bbs:/home/bbs/bin/lbbs"
 test = ""
 
