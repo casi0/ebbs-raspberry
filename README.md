@@ -40,9 +40,7 @@ Installation:
 * curl -O https://raw.githubusercontent.com/casi0/ebbs-raspberry/master/install.py
 
 * sudo python install.py
-
-* sudo apt-get install fail2ban
-* 
+ 
 Refining your SSHd Configuration on raspberry:
 To enforce strict SSH logins even further, I have done the following to my SSH configuration:
     Set time to enter password to 20 seconds before becoming invalid.
