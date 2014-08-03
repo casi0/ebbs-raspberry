@@ -75,6 +75,6 @@ os.system("chown -R bbs /home/")
 print("* chgrp -R bbs /home/bbs\n")
 os.system("chgrp -R bbs /home/bbs")
 print("* chmod 770 /home/bbs\n")
-os.system("chmod 770 /home/bbs
+os.system("chmod 770 /home/bbs")
 
 print ("* Installation finish\n")
