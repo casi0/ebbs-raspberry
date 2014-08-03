@@ -43,7 +43,8 @@ with open('/etc/group') as search:
 
 if test1 != 0:
    with open('/etc/group', 'a') as test:
-                test.write('\nbbs:x:1002:bbs\n')
+                test.write('\nbbs:x:1004:bbs\n')
+                test.write('\nbbsadm:x:1004:bbs\n')
 
 sudo_owner = "bbsadm ALL=(ALL) NOPASSWD: ALL"
 test2 = ""
@@ -70,11 +71,12 @@ print("* Create /home/bbs\n")
 os.system("mkdir /home/bbs")
 print("* Git clone ebbs rapsberry")
 os.system("git clone https://github.com/casi0/ebbs-raspberry.git /home/bbs/")
+print("* chmod 770 /home/bbs\n")
+os.system("chmod 770 /home/bbs")
 print("* chown -R bbs /home/\n")
 os.system("chown -R bbs /home/")
 print("* chgrp -R bbs /home/bbs\n")
 os.system("chgrp -R bbs /home/bbs")
-print("* chmod 770 /home/bbs\n")
-os.system("chmod 770 /home/bbs")
+
 
 print ("* Installation finish\n")
