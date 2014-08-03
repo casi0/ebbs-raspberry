@@ -40,3 +40,5 @@ Installation:
 * curl -O https://raw.githubusercontent.com/casi0/ebbs-raspberry/master/install.py
 
 * sudo python install.py
+
+See EBBS-Guide for bbs administration.
