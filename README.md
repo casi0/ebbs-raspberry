@@ -52,5 +52,10 @@ LoginGraceTime 20s
 PermitRootLogin no
 MaxAuthTries 3
 
+* ~bbs/bin/lbbs
+Enter SYSOP
+Enter password
+
+
 See EBBS-Guide for bbs administration.
 
